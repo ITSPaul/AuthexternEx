@@ -54,15 +54,19 @@ namespace AuthExtern
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "328961853957950",
+               appSecret: "2a9461935ee1229dc321ce6a47dd4fdb");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+
+
+
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "430834108411-hrm8gdc45tvokdijpdp3ajjvmmufblvp.apps.googleusercontent.com",
+                ClientSecret = "rs6uV2k4xSwbaIBh1c-E6Q34"
+                
+            });
         }
     }
 }

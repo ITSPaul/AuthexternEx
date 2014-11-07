@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace AuthExtern.Models
@@ -6,8 +7,13 @@ namespace AuthExtern.Models
     public class ExternalLoginConfirmationViewModel
     {
         [Required]
+        [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
+
+        public string HomeTown { get; set; }
+        public DateTime? BirthDate { get; set; }
+
     }
 
     public class ExternalLoginListViewModel
