@@ -329,6 +329,10 @@ namespace AuthExtern.Controllers
             var loginInfo = await AuthenticationManager.GetExternalLoginInfoAsync();
             if (loginInfo == null)
             {
+                //var claims = loginInfo.ExternalIdentity.Claims;
+                //foreach(Claim c in claims)
+                    
+
                 return RedirectToAction("Login");
             }
 
